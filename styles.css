@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background: #343a40;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+.display {
+    background: #212529;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 2px solid #495057;
+    box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.btn {
+    background: #495057;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+    background: #6c757d;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn.operator {
+    background: #f8f9fa;
+    color: #495057;
+}
+
+.btn.operator:hover {
+    background: #e9ecef;
+}
+
+.btn.operator:active {
+    transform: scale(0.95);
+}
+
+.btn:nth-child(3n+1) {
+    background: #adb5bd;
+}
+
+.btn:nth-child(3n+1):hover {
+    background: #ced4da;
+}
+
+.btn:nth-child(3n+1):active {
+    transform: scale(0.95);
+}
